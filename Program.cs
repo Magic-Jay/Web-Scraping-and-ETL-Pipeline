@@ -28,10 +28,10 @@ namespace CiscoDataLoad
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
 
                 CiscoDataLoad.InsertIntoTable1(ReportUrl1, connectionString);
-                CiscoDataLoad.InsertIntoCiscoAgentsNotReady(ReportUrl2, connectionString);
-                CiscoDataLoad.InsertIntoCiscoAgentsLogIn(ReportUrl3, connectionString);
-                CiscoDataLoad.InsertIntociscoQueues(ReportUrl4, connectionString);
-                CiscoDataLoad.InsertIntoCiscoInboundOutbound(Url5, connectionString);
+                CiscoDataLoad.InsertIntoTable2(ReportUrl2, connectionString);
+                CiscoDataLoad.InsertIntoTable3(ReportUrl3, connectionString);
+                CiscoDataLoad.InsertIntoTable4(ReportUrl4, connectionString);
+                CiscoDataLoad.InsertIntoTable5(Url5, connectionString);
             }
             catch (Exception ex)
             {
@@ -56,9 +56,9 @@ namespace CiscoDataLoad
                 ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls12 | SecurityProtocolType.Ssl3;
 
                 CiscoDataLoad.InsertIntoTable1(DailyReportUrl21, connectionString);
-                CiscoDataLoad.InsertIntoCiscoAgentsNotReady(ReportUrl22, connectionString);
-                CiscoDataLoad.InsertIntoCiscoAgentsLogIn(ReportUrl23, connectionString);
-                CiscoDataLoad.InsertIntociscoQueues(ReportUrl24, connectionString);
+                CiscoDataLoad.InsertIntoTable2(ReportUrl22, connectionString);
+                CiscoDataLoad.InsertIntoTable3(ReportUrl23, connectionString);
+                CiscoDataLoad.InsertIntoTable4(ReportUrl24, connectionString);
 
             }
             catch (Exception ex)
